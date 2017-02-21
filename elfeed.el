@@ -36,8 +36,8 @@
   (when (file-exists-p config)
     (load-file config)))
 
-(global-set-key (kbd "C-o f") 'elfeed)
-(global-set-key (kbd "C-o F") 'elfeed-update)
+(global-set-key (kbd "C-c f") 'elfeed)
+(global-set-key (kbd "C-c F") 'elfeed-update)
 
 (elfeed-update)
 (elfeed)
