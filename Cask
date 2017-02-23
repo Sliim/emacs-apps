@@ -9,3 +9,4 @@
 (depends-on "slack")
 (depends-on "alert")
 (depends-on "elfeed")
+(depends-on "twittering-mode")
