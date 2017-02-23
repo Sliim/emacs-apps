@@ -47,7 +47,7 @@
   (shell-command-to-string (concat "notify-send '" from "' '" text "' -i chat -u normal> /dev/null 2>&1")))
 (add-hook 'jabber-alert-message-hooks 'jabber-alert-message-shell-command)
 
-(let ((config (expand-file-name ".account.el" (getenv "HOME"))))
+(let ((config (expand-file-name ".jabber.el" (getenv "HOME"))))
   (when (file-exists-p config)
     (load-file config)))
 

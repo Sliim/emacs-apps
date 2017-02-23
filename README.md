@@ -27,11 +27,10 @@ emacs -Q -l elfeed.el
 ```
 
 #### jabber.el
-Define jabber accounts in `~/.account.el`:
+Define jabber accounts in `~/.jabber.el`:
 ```
 (setq jabber-account-list
-  '(
-    ("foobar@gmail.com/emacs"
+  '(("foobar@gmail.com/emacs"
      (:account . foobar@gmail.com/emacs)
      (:connection-type . ssl)
      (:password . nil)
