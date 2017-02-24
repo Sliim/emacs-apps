@@ -1,4 +1,4 @@
-;;; dired.el --- Emacs IRC Client -*- emacs-lisp -*-
+;;; dired.el --- Emacs dired -*- emacs-lisp -*-
 ;;
 ;; Author: Sliim <sliim@mailoo.org>
 ;; Version: 1.0.0
@@ -8,7 +8,7 @@
 
 ;;; Commentary:
 
-;; Emacs app: File manager with dired
+;; Emacs app: File manager with dired/direx
 
 ;;; License:
 

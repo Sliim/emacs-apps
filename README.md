@@ -3,7 +3,17 @@
 Collection of `emacs-lisp` scripts designed to be ran as standalone app.
 
 ## Requirements
-It is strongly recommended to use my [emacs.d](https://github.com/Sliim/emacs.d) setup with these scripts.
+It is strongly recommended to use my [emacs.d](https://github.com/Sliim/emacs.d) setup with these scripts. You will also need [Cask](https://github.com/cask/cask) to install following dependencies:
+- `helm`
+- `alert`
+- `jabber`
+- `direx`
+- `magit`
+- `slack`
+- `elfeed`
+- `twittering-mode`
+
+Install them with: `cask install`.
 
 ## Usage
 #### dired.el
