@@ -31,7 +31,6 @@
 
 (load-file (expand-file-name "init.el" (file-name-directory load-file-name)))
 (require 'direx)
-(require 'helm)
 (require 'helm-files)
 
 (defun direx:mouse-1 (event)

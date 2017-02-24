@@ -32,7 +32,6 @@
 (load-file (expand-file-name "init.el" (file-name-directory load-file-name)))
 
 (require 'slack)
-(require 'helm)
 (require 'helm-command)
 
 (setq alert-default-icon "user-group-new"

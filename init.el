@@ -69,6 +69,11 @@
 (require 'alert)
 (setq alert-default-style 'libnotify)
 
+;; Global Helm setup
+(require 'helm)
+(require 'helm-buffers)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+
 ;; Keybindings
 (global-set-key (kbd "M-<up>") 'windmove-up)
 (global-set-key (kbd "M-<down>") 'windmove-down)

@@ -32,14 +32,11 @@
 (load-file (expand-file-name "init.el" (file-name-directory load-file-name)))
 
 (require 'twittering-mode)
-(require 'helm)
-(require 'helm-command)
 
 (setq twittering-use-master-password t
       twittering-icon-mode t
       twittering-display-remaining t)
 
-(global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-c t") 'twit)
 
 (twittering-enable-unread-status-notifier)
