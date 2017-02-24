@@ -65,6 +65,10 @@
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Alerts
+(require 'alert)
+(setq alert-default-style 'libnotify)
+
 ;; Keybindings
 (global-set-key (kbd "M-<up>") 'windmove-up)
 (global-set-key (kbd "M-<down>") 'windmove-down)

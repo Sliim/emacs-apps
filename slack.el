@@ -32,13 +32,12 @@
 (load-file (expand-file-name "init.el" (file-name-directory load-file-name)))
 
 (require 'slack)
-(require 'alert)
 (require 'helm)
 (require 'helm-command)
 
-(setq slack-buffer-emojify t
-      slack-prefer-current-team t
-      alert-default-style 'notifier)
+(setq alert-default-icon "user-group-new"
+      slack-buffer-emojify t
+      slack-prefer-current-team t)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 
