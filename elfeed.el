@@ -39,7 +39,7 @@
 (global-set-key (kbd "C-c f") 'elfeed)
 (global-set-key (kbd "C-c F") 'elfeed-update)
 
-(elfeed-update)
+(run-at-time 0 600 'elfeed-update)
 (elfeed)
 
 ;;; elfeed.el ends here
