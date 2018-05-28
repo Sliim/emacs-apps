@@ -34,7 +34,7 @@
 (require 'slack)
 (require 'helm-command)
 
-(setq alert-default-icon "user-group-new"
+(setq alert-default-icon "view-conversation-balloon"
       slack-buffer-emojify t
       slack-prefer-current-team t)
 
