@@ -37,5 +37,6 @@
       magit-status-buffer-switch-function 'switch-to-buffer)
 
 (call-interactively 'magit-status)
+(delete-other-windows)
 
 ;;; magit.el ends here
