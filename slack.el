@@ -38,8 +38,6 @@
       slack-buffer-emojify t
       slack-prefer-current-team t)
 
-(global-set-key (kbd "M-x") 'helm-M-x)
-
 (let ((config (expand-file-name ".slack.el.gpg" (getenv "HOME"))))
   (when (file-exists-p config)
     (load-file config)))
