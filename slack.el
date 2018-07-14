@@ -32,7 +32,6 @@
 (load-file (expand-file-name "init.el" (file-name-directory load-file-name)))
 
 (require 'slack)
-(require 'helm-command)
 
 (setq alert-default-icon "view-conversation-balloon"
       slack-buffer-emojify t

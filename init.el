@@ -51,12 +51,17 @@
   (normal-top-level-add-subdirs-to-load-path))
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" emacsd-dir))
 
+(require 'alert)
+(require 'helm)
+(require 'helm-command)
+(require 'helm-buffers)
+
+(require 'emacsd-term-module)
+
 (load-theme 'S70wN-blue t)
 (custom-theme-set-faces
  'S70wN-blue
  `(default ((t ( :foreground "#F6F3E8" :height 85 :width normal)))))
-
-(require 'emacsd-term-module)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -64,15 +69,7 @@
 (delete-selection-mode t)
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;; Alerts
-(require 'alert)
 (setq alert-default-style 'libnotify)
-
-;; Global Helm setup
-(require 'helm)
-(require 'helm-buffers)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 ;; Keybindings
 (global-set-key (kbd "M-<up>") 'windmove-up)
@@ -83,5 +80,6 @@
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 ;;; init.el ends here
