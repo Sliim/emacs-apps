@@ -56,6 +56,7 @@
 (require 'helm-command)
 (require 'helm-buffers)
 
+(require 'emacsd-tls-hardening-module)
 (require 'emacsd-term-module)
 
 (load-theme 'S70wN-blue t)
