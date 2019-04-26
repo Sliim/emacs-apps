@@ -34,7 +34,7 @@
 (require 'twittering-mode)
 
 (setq twittering-use-master-password t
-      twittering-icon-mode t
+      twittering-icon-mode nil
       twittering-display-remaining t)
 
 (global-set-key (kbd "C-c t") 'twit)
